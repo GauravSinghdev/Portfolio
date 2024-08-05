@@ -1,8 +1,8 @@
 "use client";
 
 import { Button } from "../../components/ui/button";
-import { Input, input } from "../../components/ui/input";
-import { Textarea, textarea } from "../../components/ui/textarea";
+import { Input } from "../../components/ui/input";
+import { Textarea } from "../../components/ui/textarea";
 
 import { 
   Select, 
@@ -14,7 +14,7 @@ import {
   SelectValue
 } from "../../components/ui/select";
 
-import  {FaPhoneAlt, FaEnvelope, FaMpMarkerAlt, FaMapMarkedAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 
 const info = [
   {
@@ -30,7 +30,7 @@ const info = [
   {
     icon: <FaMapMarkedAlt />,
     title: "Address",
-    description: "Near Tilak Market, Haldwani 263139"
+    description: "Near Tilak Market, Haldwani, 263139"
   }
 ];
 
@@ -39,10 +39,10 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.section 
-      initial={{opacity: 0}}
+      initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: {delay: 2.4, duration:0.4, ease:"easeIn"},
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="py-6"
     >
@@ -50,34 +50,34 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rouned-xl">
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60"> 
                 Lorem aas dadada sdasdasdad assdassdad asd as da.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
+                <Input type="text" placeholder="Firstname" />
+                <Input type="text" placeholder="Lastname" />
                 <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="tel" placeholder="Phone number" />
               </div>
               {/* select */}
               <Select>
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service"/>
+                  <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="web">Web Development</SelectItem>
+                    <SelectItem value="uiux">UI/UX Design</SelectItem>
+                    <SelectItem value="logo">Logo Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               {/* textarea */}
-              <Textarea className="h-[200px]" placeholder="Type your message here."/>
+              <Textarea className="h-[200px]" placeholder="Type your message here." />
               {/* btn */}
               <Button size="md" className="w-[50%] mx-auto rounded-3xl">
                 Send message
@@ -96,7 +96,7 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <p className="text-white/60">{item.title}</p>
-                        <h3 className="text-xl">{item.description}</h3>
+                        <h3 className="text-xl text-white break-words">{item.description}</h3>
                       </div>
                     </li> 
                   )
@@ -110,4 +110,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
