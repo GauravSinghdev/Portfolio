@@ -29,7 +29,7 @@ const info = [
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Adress",
+    title: "Address",
     description: "Near Tilak Market, Haldwani 263139"
   }
 ];
@@ -79,7 +79,7 @@ const Contact = () => {
               {/* textarea */}
               <Textarea className="h-[200px]" placeholder="Type your message here."/>
               {/* btn */}
-              <Button size="md" className="w-full">
+              <Button size="md" className="w-[50%] mx-auto rounded-3xl">
                 Send message
               </Button>              
             </form>
