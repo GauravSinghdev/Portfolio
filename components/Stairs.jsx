@@ -22,7 +22,7 @@ const Stairs = () => {
   return (
     <>
         {
-            [...Array(6)].map((_, index) => {
+            [...Array(3)].map((_, index) => {
                 return (
                     <motion.div 
                         key={index} 

@@ -19,7 +19,7 @@ const services = [
   },
   {
     num: '03',
-    title: 'Logo Design',
+    title: 'Java Development',
     description: "Lorem16 adas dsadassd adaa a das dasd asd aa",
     href: "/"
   },

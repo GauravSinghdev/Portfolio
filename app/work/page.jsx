@@ -10,7 +10,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger
+  TooltipTrigger,
 } from '../../components/ui/tooltip';
 
 import Link from "next/link";
@@ -20,33 +20,51 @@ import WorkSliderBtns from "../../components/WorkSliderBtns";
 const projects = [
   {
     num: '01',
-    category: 'Front-End',
-    title: 'project 1',
-    description: 'Lorem aas dassdasdassd asdassdasdasd assdasdassdasa.',
-    stack: [{name: 'HTML 5'}, {name: "CSS 3"}, {name: "JavaScript"}],
-    image: '/assets/work/thumb1.png',
-    live: "",
-    github: "",
+    category: 'Full-Stack',
+    title: 'Mediclone - Blogging App',
+    description: 'MediClone is a dynamic platform for writers and readers, inspired by Medium. It offers a space where storytelling meets community, empowering both seasoned authors and budding writers to share their ideas, insights, and experiences with a vibrant audience.',
+    stack: [
+      { name: 'React.js' }, 
+      { name: "TypeScript" }, 
+      { name: "TailwindCSS" }, 
+      { name: "PostgreSQL" }, 
+      { name: "Hono + Cloudflare" }
+    ],
+    image: '/assets/work/MediClone.png',
+    live: "https://medium-clone-ruby.vercel.app/",
+    github: "https://github.com/GauravSinghdev/Medium-Clone",
   },
   {
     num: '02',
     category: 'MERN-Stack',
-    title: 'project 2',
-    description: 'Lorem aas dassdasdassd asdassdasdasd assdasdassdasa.',
-    stack: [{name: 'HTML 5'}, {name: "CSS 3"}, {name: "JavaScript"}],
-    image: '/assets/work/thumb2.png',
-    live: "",
-    github: "",
+    title: 'Khuchies - Cookie Store App',
+    description: 'Welcome to Khuchies the Cookie Delights, your go-to online store for the finest and freshest cookies accross Rajasthan. Our e-commerce platform offers a wide range of gourmet cookies, from classic chocolate chip to unique seasonal flavors, all made with high-quality ingredients.',
+    stack: [
+      { name: 'React.js' }, 
+      { name: "TailwindCSS" }, 
+      { name: "JavaScript" },
+      { name: "Mongodb" },
+      { name: "Express.js" }
+    ],
+    image: '/assets/work/Khuchies.png',
+    live: "https://khuchies-thecookiestore.vercel.app",
+    github: "https://github.com/GauravSinghdev/khuchies-TheCookieStore",
   },
   {
     num: '03',
     category: 'Full-Stack',
-    title: 'project 3',
-    description: 'Lorem aas dassdasdassd asdassdasdasd assdasdassdasa.',
-    stack: [{name: 'HTML 5'}, {name: "CSS 3"}, {name: "JavaScript"}],
-    image: '/assets/work/thumb3.png',
-    live: "",
-    github: "",
+    title: 'NoteMaster - Note making App',
+    description: "Welcome to NoteMaster, the ultimate app designed to help you capture and organize your thoughts effortlessly. Whether you're a student, professional, or creative thinker, NoteMaster is your perfect companion for taking notes, managing tasks, and staying organized.",
+    stack: [
+      { name: 'React.js' }, 
+      { name: "TailwindCSS" }, 
+      { name: "JavaScript" },
+      { name: "Mongodb" },
+      { name: "Express.js" }
+    ],
+    image: '/assets/work/NoteMaster.png',
+    live: "https://note-app-codewithkara.vercel.app/",
+    github: "https://github.com/GauravSinghdev/Note-App",
   },
 ];
 
@@ -71,11 +89,15 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[35px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
-              <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <div className="flex flex-col gap-2">
+                <p className="text-white/90 text-xl underline underline-offset-4 decoration-accent">{project.title}</p>
+                <p className="text-white/60">{project.description}</p>
+              </div>
+              
+              <ul className="flex flex-wrap gap-2">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-accent">
                     {item.name}
@@ -92,7 +114,7 @@ const Work = () => {
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent"/>
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live projects</p>
+                        <p>Live project</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

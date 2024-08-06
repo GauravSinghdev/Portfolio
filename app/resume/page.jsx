@@ -5,14 +5,16 @@ import {
   FaCss3, 
   FaJs, 
   FaReact,
-  FaNodeJs
+  FaNodeJs,
+  FaJava 
 } from 'react-icons/fa'
 
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiMongodb,
-  SiPostgresql 
+  SiPostgresql,
+  SiTypescript 
 } from 'react-icons/si'
 
 import { SiExpress } from "react-icons/si";
@@ -115,6 +117,10 @@ const skills = {
       name: "JavaScript"
     },
     {
+      icon: <SiTypescript />,
+      name: "TypeScript"
+    },
+    {
       icon: <FaReact/>,
       name: "React.js"
     },
@@ -141,6 +147,10 @@ const skills = {
     {
       icon: <SiPostgresql  />,
       name: "PostgreSQL"
+    },
+    {
+      icon: <FaJava />,
+      name: "Java"
     }
   ]
 }
