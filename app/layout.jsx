@@ -4,10 +4,10 @@ import Header from "../components/Header";
 import PageTransition from "../components/PageTransition";
 import StairTransition from "../components/StairTransition";
 
-const jetBrainsMono = JetBrains_Mono({ 
-  subsets: ["latin"], 
-  weight : ["100", "200", "300", "400", "500","600","700","800"],
-  variable: "--font-jetbrainsMono" 
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jetbrainsMono"
 });
 
 export const metadata = {
@@ -18,11 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" type="image/svg+xml" href="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-portfolio-icon-png-image_695874.jpg" />
-      <title>Portfolio - @codewithkara</title>
+      <head>
+        <title>Portfolio - @codewithkara</title>
+        <link rel="icon" type="image/svg+xml" href="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-portfolio-icon-png-image_695874.jpg" />
+      </head>
       <body className={jetBrainsMono.variable}>
-        <Header/>
-        <StairTransition/>
+        <Header />
+        <StairTransition />
         <PageTransition>
           {children}
         </PageTransition>
