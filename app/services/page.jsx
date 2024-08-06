@@ -8,25 +8,25 @@ const services = [
   {
     num: '01',
     title: 'Web Development',
-    description: "Our web development services offer custom website creation, responsive design, and robust backend solutions using the latest technologies like React, Node.js, and PostgreSQL. We ensure high-quality, secure, and SEO-friendly websites tailored to your business needs. Contact us to elevate your online presence with expert, scalable web solutions.",
+    description: "Our web development services offer custom website creation, responsive design, and robust backend solutions using the latest technologies like React, Node.js, and PostgreSQL.",
     href: "/"
   },
   {
     num: '02',
     title: 'UI/UX Design',
-    description: "Our UI/UX design services provide intuitive, visually appealing, and user-centric designs that enhance user engagement and satisfaction. We use the latest design tools and principles to create seamless, responsive interfaces tailored to your brand. Contact us to transform your digital experience with expert UI/UX solutions.",
+    description: "Our UI/UX design services provide intuitive, visually appealing, and user-centric designs that enhance user engagement and satisfaction.",
     href: "/"
   },
   {
     num: '03',
     title: 'Java Development',
-    description: "Our Java development services deliver robust, scalable, and secure applications tailored to your business needs. We specialize in creating high-performance solutions using the latest Java technologies and frameworks. Contact us to develop reliable and efficient Java-based software.",
+    description: "Our Java development services deliver robust, scalable, and secure applications tailored to your business needs. ",
     href: "/"
   },
   {
     num: '04',
     title: 'SEO',
-    description: "Our SEO services boost your online visibility and drive organic traffic through tailored strategies and the latest optimization techniques. We enhance your search engine rankings with keyword research, on-page and off-page SEO, and content optimization. Contact us to improve your website's performance and achieve higher search engine rankings.",
+    description: "Our SEO services boost your online visibility and drive organic traffic through tailored strategies and the latest optimization techniques.",
     href: "/"
   }
 
@@ -61,7 +61,7 @@ const Services = () => {
                 </Link>
               </div>
               {/* title */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent translate-all duration:500">{services.title}</h2>
+              <h2 className="text-[35px] font-bold leading-none text-white group-hover:text-accent translate-all duration:500">{services.title}</h2>
               {/* description */}
               <p className="text-white/60">{services.description}</p>
               {/* border */}
