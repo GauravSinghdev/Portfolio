@@ -46,7 +46,7 @@ const projects = [
       { name: "PostgreSQL" }, 
       { name: "Hono + Cloudflare" }
     ],
-    image: '/assets/work/MediClone.png',
+    image: '/assets/work/Rabbit-Type.png',
     live: "https://rabbit-type.vercel.app/",
     github: "https://github.com/GauravSinghdev/monkeyType---Clone",
   },
