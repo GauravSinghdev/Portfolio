@@ -36,6 +36,22 @@ const projects = [
   },
   {
     num: '02',
+    category: 'Full-Stack',
+    title: 'RabbitType - Typing Test App',
+    description: 'RabbitType is an engaging typing speed application designed to help users improve their typing accuracy and speed. With real-time feedback, animated caret, and dynamic text highlighting, it provides an intuitive and enjoyable typing practice experience for users of all levels.',
+    stack: [
+      { name: 'React.js' }, 
+      { name: "TypeScript" }, 
+      { name: "TailwindCSS" }, 
+      { name: "PostgreSQL" }, 
+      { name: "Hono + Cloudflare" }
+    ],
+    image: '/assets/work/MediClone.png',
+    live: "https://rabbit-type.vercel.app/",
+    github: "https://github.com/GauravSinghdev/monkeyType---Clone",
+  },
+  {
+    num: '03',
     category: 'MERN-Stack',
     title: 'Khuchies - Cookie Store App',
     description: 'Welcome to Khuchies the Cookie Delights, your go-to online store for the finest and freshest cookies accross Rajasthan. Our e-commerce platform offers a wide range of gourmet cookies, from classic chocolate chip to unique seasonal flavors, all made with high-quality ingredients.',
@@ -51,8 +67,8 @@ const projects = [
     github: "https://github.com/GauravSinghdev/khuchies-TheCookieStore",
   },
   {
-    num: '03',
-    category: 'Full-Stack',
+    num: '04',
+    category: 'MERN-Stack',
     title: 'NoteMaster - Note making App',
     description: "Welcome to NoteMaster, the ultimate app designed to help you capture and organize your thoughts effortlessly. Whether you're a student, professional, or creative thinker, NoteMaster is your perfect companion for taking notes, managing tasks, and staying organized.",
     stack: [
